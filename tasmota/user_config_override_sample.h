@@ -39,6 +39,10 @@
                                                    // This includes the LetsEncrypt CA in tasmota_ca.ino for verifying server certificates
 //  #define USE_MQTT_TLS_FORCE_EC_CIPHER           // Force Elliptic Curve cipher (higher security) required by some servers (automatically enabled with USE_MQTT_AWS_IOT) (+11.4k code, +0.4k mem)
 #endif
+
+#ifndef USE_PING
+#define USE_PING
+#endif
 /*
 Examples :
 
